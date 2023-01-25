@@ -1,74 +1,108 @@
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        background-color: #030ABC;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 
 body {
-    line-height: 1;
     margin: 0 auto;
     min-width: 375px;
     max-width: 834px;
-    background-color: white;
+    
 }
-ol, ul {
-    list-style: none;
+a {
+    color: white;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+#trending{
+    background-color: white;
+    padding: 10px;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-y: hidden;
+}
+#trending section{
+    margin:10px;
+    position: relative;
+}
+
+#gradienthead {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(33, 4, 217, 1) 0%, rgba(2, 0, 36, 1) 100%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -20px;}
+   
+    #trendcolor {
+        color: #590242;
+        background-color: white;
+        margin-bottom: -20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #playcolor {
+        color: #590242;
+    }
+    #curatedcolor {
+        color: #590242;
+    }
 
 
+footer {
+    color: #590242;
+    text-align: center;
+    background-color: white;
+}
  
 
-
+header {
+    display: flex;
+    background-color: #020873;
+    align-items: center;
+}
 
 html
 {
+    box-sizing: border-box;
     background-color: #020659;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-.scroll{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-.scroll section{
-margin:10px;
-position: relative;
-}
-.scroll div{
-    position:absolute;
-    top:251px;
-    background-color: rgba(255,255,255,.75);
-    padding: 5px;
-    height:50px;
-    width: 350px
-}
-    
     
 
 
 nav ul{
     color: white;
+    display: inline-flex;
+    text-align: center;
+    list-style-type: none;
+    text-transform: uppercase;
   
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 20px;
-   
-   margin:25px;
+    nav a {
+        text-decoration: none;
+        color: white;
+    
 
+
+}
+audio{
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+
+}
+#curated {
+    background-color: white;
+}
+#playlists {
+    background-color: white;
 }
 nav li{
     list-style-type: none;
@@ -107,5 +141,121 @@ article{
         background-color: #020659;}
         .button3:hover {
             background-color: #020659;}
-        }
 
+
+           @media screen and (min-width:834px) {
+                ul {
+                    overflow: visible;
+                    position: absolute;
+                    top: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+                label span, input {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 834px) {
+                nav ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    width: 700px;
+                }
+                #trending {
+                    display: flex;
+                    max-width: 834px;
+                }
+                #gradienthead{
+                    max-width: 834px;
+                }
+                #trending {
+                    background-color: white;
+                    padding: 10px;
+                    overflow-x: auto;
+                }
+                #curated{
+                    float: right;
+                    width: 50%;
+                }
+            }
+
+
+
+         /*
+#trending ::-webkit-scrollbar {
+overflow-x: auto;
+}
+#trending ::-webkit-scrollbar-track {
+    overflow-x: auto;
+}
+#trending ::-webkit-scrollbar-thumb {
+    overflow-x: auto;
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+    overflow-x: auto;
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+}
+/*menu
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #FFFFFF;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #FFFFFF;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+    label span, input {
+        display: none;
+    }
