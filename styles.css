@@ -239,9 +239,11 @@ article{
                     padding: 10px;
                     overflow-x: auto;
                 }
-                #curated{
-                    float: right;
-                    width: 50%;
+                #curated, #playlists{
+
+                    display: grid;
+                    grid-template-columns: repeat(10fr,200px);
+                    grid: 3px;
                 }
             }
 
