@@ -4,7 +4,17 @@
     box-sizing: inherit;
 }
 
-
+@media screen and (min-width: 834px) {
+    #trending{
+        background-color: white;
+        padding: 10px;
+        overflow-x: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        overflow-y: hidden;
+    }
+    
+}
 body {
     margin: 0 auto;
     min-width: 375px;
@@ -106,6 +116,7 @@ audio{
     
 }
 #playlists{
+    display: inline-grid;
     background-color: #0d8dfb;
     
 }
