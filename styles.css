@@ -27,31 +27,19 @@ html{
     width:50%;
     position: relative;
     grid-template-columns: 1fr 1fr ;
-    grid-column-end: 4;
-    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column-start: 4;
     margin-top: -1000px;
   
 
  
 
 }
-#playlists{
-    background-color: #0d8dfb;
-    display:inline-grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width:50%;
+
     
 
-}
-.plays{
-    display: flex;
-    background-color: #0D8AFB;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
+
+
 
 body {
     margin: 0 auto;
@@ -273,6 +261,20 @@ article{
 
 
            @media screen and (min-width:834px) {
+            #playlists{
+                background-color: #0d8dfb;
+                display:inline-grid;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                width:50%;}
+                .plays{
+                    display: flex;
+                    background-color: #0D8AFB;
+                    margin-bottom: 30px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding: 10px;
+                }
                 ul {
                     overflow: visible;
                     position: absolute;
