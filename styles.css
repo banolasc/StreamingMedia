@@ -123,6 +123,7 @@ audio{
 }
 #curated,#playlists{
     background-color: #020873;
+    float: clear;
     
 }
 #playlists{
@@ -275,7 +276,7 @@ article{
 
 
 
-         /*
+         /
 #trending ::-webkit-scrollbar {
 overflow-x: auto;
 }
@@ -296,7 +297,7 @@ overflow-x: auto;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
 }
-/*menu
+/
 ul {
     overflow: hidden;
     max-height: 0;
