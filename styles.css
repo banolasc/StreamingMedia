@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     min-width: 375px;
     max-width: 834px;
+    background-color: white;
     
 }
 a {
@@ -31,6 +32,7 @@ table {
     margin:10px;
     position: relative;
 }
+ 
 
 #gradienthead {
     background: rgb(0, 212, 255);
@@ -54,10 +56,11 @@ table {
     }
 
 
-footer {
+footer p{
     color: #590242;
     text-align: center;
     background-color: white;
+    position:sticky;
 }
  
 
@@ -98,12 +101,16 @@ audio{
     left: 5px;
 
 }
-#curated {
-    background-color: white;
+#curated,#playlists{
+    background-color: #020873;
+    
 }
-#playlists {
-    background-color: white;
+#playlists{
+    background-color: #0d8dfb;
+    
 }
+
+
 nav li{
     list-style-type: none;
 }
@@ -239,11 +246,9 @@ article{
                     padding: 10px;
                     overflow-x: auto;
                 }
-                #curated, #playlists{
-
-                    display: grid;
-                    grid-template-columns: repeat(10fr,200px);
-                    grid: 3px;
+                #curated{
+                    
+                    width: 100%;
                 }
             }
 
