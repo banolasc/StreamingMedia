@@ -4,7 +4,11 @@
     box-sizing: inherit;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px){
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
     #trending{
         background-color: white;
         padding: 10px;
@@ -12,18 +16,15 @@
         display: grid;
         grid-template-columns: repeat(5,1fr);
         overflow-y: hidden;
-    }
-    #curated{
-        padding: 10px;
-        overflow-x: auto;
-        display: flex;
-        flex-direction: column;
-        overflow-y:hidden;
-        max-width: 834px;
-       justify-content: space-between;
-    }
+   
+}
+}
+
+#playlists, #curated{
     
-    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 body {
     margin: 0 auto;
@@ -108,7 +109,6 @@ html
 
 nav ul{
     color: white;
-    display: inline-flex;
     text-align: center;
     list-style-type: none;
     text-transform: uppercase;
@@ -258,8 +258,6 @@ article{
             }
             @media screen and (min-width: 834px) {
                 nav ul {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     width: 700px;
                 }
                 #trending {
@@ -274,14 +272,10 @@ article{
                     padding: 10px;
                     overflow-x: auto;
                 }
-                #curated{
-                    
-                    width: 100%;
-                }
+                
                 header {
-                    display: flex;
                     background-color: #020873;
-                    align-items: center;
+                    
                 }
             }
 
