@@ -13,6 +13,14 @@
         grid-template-columns: repeat(5,1fr);
         overflow-y: hidden;
     }
+    #curated{
+        padding: 10px;
+        overflow-x: auto;
+        display: grid;
+       grid-template-columns: repeat(5,1fr);
+       overflow-y:hidden;
+    }
+    
     
 }
 body {
