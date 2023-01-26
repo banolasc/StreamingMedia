@@ -30,6 +30,15 @@ html{
         grid-template-columns: repeat(5,1fr);
         overflow-y: hidden;
 }
+.yourPlaylists{
+    background-color: #0d8dfb;
+    padding: 10px;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-y: hidden;
+    
+}
 
 }
 
