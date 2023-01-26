@@ -272,11 +272,17 @@ article{
                     
                     width: 100%;
                 }
+                header {
+                    display: flex;
+                    background-color: #020873;
+                    align-items: center;
+                }
             }
 
 
 
-         /
+         
+/*
 #trending ::-webkit-scrollbar {
 overflow-x: auto;
 }
