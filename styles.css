@@ -4,7 +4,7 @@
     box-sizing: inherit;
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 375px) {
     #trending{
         background-color: white;
         padding: 10px;
@@ -16,9 +16,11 @@
     #curated{
         padding: 10px;
         overflow-x: auto;
-        display: grid;
-       grid-template-columns: repeat(5,1fr);
-       overflow-y:hidden;
+        display: flex;
+        flex-direction: column;
+        overflow-y:hidden;
+        max-width: 834px;
+       justify-content: space-between;
     }
     
     
