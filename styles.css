@@ -22,14 +22,6 @@ html{
 
    
 }
-.curatedplaylists{
-    background-color: #0D8AFB;
-        padding: 10px;
-        overflow-x: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        overflow-y: hidden;
-}
 
 }
 
@@ -233,7 +225,38 @@ dl {
     width:311px;
     top:240px;
 }
-
+#playlists{
+    background-color: #0d8dfb;
+    display:inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width:50%;}
+    .plays{
+        display: flex;
+        background-color: #0D8AFB;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .curatedLines{
+        display: flex;
+            margin-bottom: 30px;
+            background-color: #020659;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 10px
+    }
+    .curatedplaylists{
+        display: grid;
+        float:right;
+        width:50%;
+        position: relative;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-end: 3;
+        grid-column-start: 4;
+        margin-top: -1000px;
+    }
 
 .button1:hover {
     background-color: #020659;}
@@ -245,20 +268,7 @@ dl {
 
            
             @media screen and (min-width: 834px) {
-                #playlists{
-                    background-color: #0d8dfb;
-                    display:inline-grid;
-                    grid-column-start: 1;
-                    grid-column-end: 4;
-                    width:50%;}
-                    .plays{
-                        display: flex;
-                        background-color: #0D8AFB;
-                        margin-bottom: 30px;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                        padding: 10px;
-                    }
+                
                     ul {
                         overflow: visible;
                         position: absolute;
@@ -314,12 +324,14 @@ dl {
                 grid-column-end: 3;
                 grid-column-start: 4;
                 margin-top: -1000px;
-              
+            }
+        }
+    }
             
              
             
-            }
-        }
+            
+        
 
 
 
