@@ -18,8 +18,19 @@ html{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         overflow-y: hidden;
+    
+
    
 }
+.curatedplaylists{
+    background-color: #0D8AFB;
+        padding: 10px;
+        overflow-x: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        overflow-y: hidden;
+}
+
 }
 
 
@@ -232,33 +243,32 @@ dl {
             background-color: #020659;}
 
 
-           @media screen and (min-width:834px) {
-            #playlists{
-                background-color: #0d8dfb;
-                display:inline-grid;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                width:50%;}
-                .plays{
-                    display: flex;
-                    background-color: #0D8AFB;
-                    margin-bottom: 30px;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                    padding: 10px;
-                }
-                ul {
-                    overflow: visible;
-                    position: absolute;
-                    top: 0;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                }
-                label span, input {
-                    display: none;
-                }
-            }
+           
             @media screen and (min-width: 834px) {
+                #playlists{
+                    background-color: #0d8dfb;
+                    display:inline-grid;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    width:50%;}
+                    .plays{
+                        display: flex;
+                        background-color: #0D8AFB;
+                        margin-bottom: 30px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        padding: 10px;
+                    }
+                    ul {
+                        overflow: visible;
+                        position: absolute;
+                        top: 0;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    }
+                    label span, input {
+                        display: none;
+                    }
                 nav ul {
                     width: 700px;
                 }
