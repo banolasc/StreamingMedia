@@ -59,7 +59,13 @@ table {
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(33, 4, 217, 1) 0%, rgba(2, 0, 36, 1) 100%);
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: -20px;}
+    margin-bottom: -20px;
+}
+nav img{
+    position: relative;;
+}
+
+    
    
     #trendcolor {
         color: #590242;
