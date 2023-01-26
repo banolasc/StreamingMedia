@@ -21,20 +21,7 @@ html{
    
 }
 }
-.curatedplaylists{
-    display: grid;
-    float:right;
-    width:50%;
-    position: relative;
-    grid-template-columns: 1fr 1fr ;
-    grid-column-end: 3;
-    grid-column-start: 4;
-    margin-top: -1000px;
-  
 
- 
-
-}
 
     
 
@@ -89,12 +76,6 @@ nav img{
         margin-bottom: -20px;
         padding-bottom: 20px;
         padding-top: 20px;
-    }
-    #playcolor {
-        color: #590242;
-    }
-    #curatedcolor {
-        color: #590242;
     }
 
 
@@ -241,17 +222,8 @@ dl {
     width:311px;
     top:240px;
 }
-.curatedLines{
-    display: flex;
-        margin-bottom: 30px;
-        background-color: #020659;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 10px
-}
-article{
-    background-color: #030ABC;
-}
+
+
 .button1:hover {
     background-color: #020659;}
     .button2:hover {
@@ -307,7 +279,37 @@ article{
                     background-color: #020873;
                     
                 }
+
+                .curatedLines{
+                    display: flex;
+                        margin-bottom: 30px;
+                        background-color: #020659;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        padding: 10px
+                }
+            
+                #playcolor {
+                color: #590242;
             }
+            #curatedcolor {
+                color: #590242;
+            }
+            .curatedplaylists{
+                display: grid;
+                float:right;
+                width:50%;
+                position: relative;
+                grid-template-columns: 1fr 1fr ;
+                grid-column-end: 3;
+                grid-column-start: 4;
+                margin-top: -1000px;
+              
+            
+             
+            
+            }
+        }
 
 
 
