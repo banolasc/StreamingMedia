@@ -25,27 +25,30 @@ html{
 }
 
 
-#grid, .curated{
-    display: grid;
-
-}
     
-
+.wrapper{
+    display: flex;
+    overflow-y: auto;
+    height: 400px;
+}
 #grid{
     display: grid;
     overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end:7;
     background-color:#1b8ef2;
     height: 400px;
     overflow-y: auto;
     background-color:#0D8AFB;
+    width:50%;
 }
 
 
 .curated{
-    
     height: 400px;
     overflow-y: auto;
     background-color: #020873;
+    width:50%;
 }
 .suns{
     display: grid;
