@@ -22,30 +22,53 @@ html{
 
    
 }
-.curatedPlaylist{
+}
+
+
+
+    
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+#playlists {
     background-color: white;
-        padding: 10px;
-        overflow-x: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        overflow-y: hidden;
 }
-.yourPlaylists{
-    background-color: #0d8dfb;
-     padding: 10px;
-        overflow-x: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        overflow-y: hidden;
-    
+#curated{
+    background-color: white;
 }
-
+.playlists{
+    height: 400px;
+    overflow-y: auto;
+    background-color:#0D8AFB;
 }
-
-
-    
-
-
+.curated{
+    height: 400px;
+    overflow-y: auto;
+    background-color: #020873;
+}
+.suns{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-bottom: 15px;
+}
+.sector{
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.playlists,.suns{
+    background-color:#2699FB;
+    margin: 10px;
+}
+.curated,.suns{
+    background-color: #020659;
+    margin: 10px;
+}
+.curated, #grid{
+    width: 50;
+}
 
 
 body {
@@ -242,38 +265,9 @@ dl {
     width:311px;
     top:240px;
 }
-#playlists{
-    background-color: #0d8dfb;
-    display:inline-grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width:50%;}
-    .plays{
-        display: flex;
-        background-color: #0D8AFB;
-        margin-bottom: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-    }
-    .curatedLines{
-        display: flex;
-            margin-bottom: 30px;
-            background-color: #020659;
-            margin-right: 10px;
-            margin-left: 10px;
-            padding: 10px
-    }
-    .curatedplaylists{
-        display: grid;
-        float:right;
-        width:50%;
-        position: relative;
-        grid-template-columns: 1fr 1fr ;
-        grid-column-end: 3;
-        grid-column-start: 4;
-        
-    }
+
+    
+    
 
 .button1:hover {
     background-color: #020659;}
@@ -317,14 +311,7 @@ dl {
                     
                 }
 
-                .curatedLines{
-                    display: flex;
-                        margin-bottom: 30px;
-                        background-color: #020659;
-                        margin-right: 10px;
-                        margin-left: 10px;
-                        padding: 10px
-                }
+        
             
                 #playcolor {
                 color: #590242;
@@ -332,17 +319,8 @@ dl {
             #curatedcolor {
                 color: #590242;
             }
-            .curatedplaylists{
-                display: grid;
-                float:right;
-                width:50%;
-                position: relative;
-                grid-template-columns: 1fr 1fr ;
-                grid-column-end: 3;
-                grid-column-start: 4;
-                margin-top: -1000px;
-            }
-        }
+            
+    }
     
             
              
