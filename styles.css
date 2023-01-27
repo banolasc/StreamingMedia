@@ -30,14 +30,19 @@ html{
 
 #grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    flex-direction: 1fr 1fr;
+    background-color:#1b8ef2;
+    height: 400px;
+    overflow-y: auto;
+    background-color:#0D8AFB;
 }
-#playlists {
-    background-color: white;
-}
+
 #curated{
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: auto;
 }
 .playlists{
     height: 400px;
@@ -65,9 +70,6 @@ html{
 .curated,.suns{
     background-color: #020659;
     margin: 10px;
-}
-.curated, #grid{
-    width: 50;
 }
 
 
