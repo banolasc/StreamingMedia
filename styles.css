@@ -40,7 +40,7 @@ html{
     height: 400px;
     overflow-y: auto;
     background-color:#0D8AFB;
-    width:50%;
+    width: 90%;
 }
 
 
@@ -48,7 +48,7 @@ html{
     height: 400px;
     overflow-y: auto;
     background-color: #020873;
-    width:50%;
+    width: 90%;
 }
 .suns{
     display: grid;
