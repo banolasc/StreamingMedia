@@ -27,7 +27,6 @@ html{
 
 #grid, .curated{
     display: grid;
-    grid-template-columns: 1fr 1fr;
 
 }
     
@@ -46,7 +45,6 @@ html{
     
     height: 400px;
     overflow-y: auto;
-    grid-template-columns: 1fr 1fr;
     background-color: #020873;
 }
 .suns{
