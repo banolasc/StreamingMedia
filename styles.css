@@ -6,7 +6,7 @@ html{
     box-sizing: inherit;
 }
 
-@media screen and (min-width: 375px) and (max-width:834px){
+@media screen and (min-width: 375px) and (orientation: landscape){
     nav ul{
         display: flex;
         justify-content: space-between;
@@ -32,11 +32,11 @@ html{
 }
 .yourPlaylists{
     background-color: #0d8dfb;
-    padding: 10px;
-    overflow-x: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    overflow-y: hidden;
+     padding: 10px;
+        overflow-x: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        overflow-y: hidden;
     
 }
 
@@ -272,7 +272,7 @@ dl {
         grid-template-columns: 1fr 1fr ;
         grid-column-end: 3;
         grid-column-start: 4;
-        margin-top: -1000px;
+        
     }
 
 .button1:hover {
