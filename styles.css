@@ -83,15 +83,14 @@ html{
     overflow-y: auto;
     height: 400px;
 }
+
+
 #grid{
     display: grid;
     overflow: hidden;
-    grid-column-start: 1;
-    grid-column-end:7;
-    background-color:#1b8ef2;
+    background-color:rgb(27, 142, 242);
     height: 400px;
     overflow-y: auto;
-    background-color:#0D8AFB;
     width: 90%;
 }
 .Title{
@@ -106,6 +105,9 @@ html{
     background-color: #020873;
     width: 90%;
 }
+.curated h2{
+    padding:10px;
+}
 .suns{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -115,11 +117,11 @@ html{
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
-#grid{
+#grid .suns{
     background-color:#2699FB;
     margin: 10px;
 }
-.curated{
+.curated .suns{
     background-color: #020659;
     margin: 10px;
 }
