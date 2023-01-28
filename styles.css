@@ -76,6 +76,7 @@ html{
     }
 
 
+
     
 .wrapper{
     display: flex;
@@ -93,7 +94,11 @@ html{
     background-color:#0D8AFB;
     width: 90%;
 }
-
+.Title{
+    overflow-y: visible;
+    color: white;
+    overflow-x: visible;
+}
 
 .curated{
     height: 400px;
@@ -148,7 +153,9 @@ table {
     position: relative;
 }
  
-
+#gradienthead h2{
+    color: white;
+}
 #gradienthead {
     background: rgb(0, 212, 255);
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(33, 4, 217, 1) 0%, rgba(2, 0, 36, 1) 100%);
